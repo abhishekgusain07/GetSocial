@@ -11,8 +11,8 @@ import { Provider } from "react-redux";
 import { BrowserRouter } from "react-router-dom";
 
 const firebaseApp = {
-   apiKey: "AIzaSyAhm8U8f1Lxsa1w-cPf_bkBzvaFBSSr6NA",
-  authDomain: "socialmediaapp-fc713.firebaseapp.com",
+   apiKey: `${process.env.REACT_APP_API_KEY}`,
+  authDomain: `${process.env.REACT_APP_AUTH_DOMAIN}`,
   projectId: "socialmediaapp-fc713",
   storageBucket: "socialize-de543.appspot.com",
   messagingSenderId: "212134742264",
